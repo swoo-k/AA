@@ -39,3 +39,31 @@
 
 ![strategy pattern](./img/strategy.jpeg)
 
+
+
+## Observer Pattern
+
+> 객체 사이에 일 대 다의 의존 관계를 정의해 두어, 어떤 객체의 상태가 변할 때 그 객체에 의존성을 가진 다른 객체들이 그 변화를 통지 받고 자동으로 갱신될 수  있게 만든다.
+
+### Use When
+
+* 통신을 하면서 Loose coupling이 필요할 때
+* Broadcasting 이 필요할 때
+* 상태 변화를 하나 또는 여러 객체에 알릴 때
+
+![observer pattern](./img/observer.png)
+
+
+
+## Template Method Pattern
+
+> 객체의 연산에는 알고리즘의 뼈대만을 정의하고 각 단계에서 수행할 구체적 처리는 서브클래스 쪽으로 미룹니다. 알고리즘의 구조 자체는 그대로 놔둔 채 알고리즘 각 단계 처리를 서브클래스에서 재정의 할 수 있게 합니다.
+>
+> (스텝 정의라고 생각)
+
+## Use When
+
+* 어떤 한 알고리즘을 이루는 부분 중 변하지 않는 부분을 한 번 정의해 놓고 다양해질 수 있는 부분은 서브클래스에서 정의 할 수 있도록 할 때
+
+![template_pattern](./img/template.jpeg)
+
