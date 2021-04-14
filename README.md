@@ -67,3 +67,17 @@
 
 ![template_pattern](./img/template.jpeg)
 
+## Iterator
+
+> 내부 표현부를 노출하지 않고 어떤 집합 객체에 속한 원소들을 순차적으로 접근할 수 있는 방법을 제공합니다.
+
+### Use When
+
+* 각 요소에 접근하되 내부 전체를 노출 하고 싶지 않을 때
+* 집합 객체를 순회하는 다양한 방법을 지원하고 싶을 때
+
+![Iterator Pattern](./img/iterator.jpeg)
+
+### 디자인 원칙
+
+* Single Responsibility (SRP)
