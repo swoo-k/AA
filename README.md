@@ -81,3 +81,28 @@
 ### 디자인 원칙
 
 * Single Responsibility (SRP)
+
+
+
+## State Pattern
+
+> 객체의 내부 상태에 따라 스스로 행동을 변경할 수 있게 허가하는 패턴으로, 이렇게 하면 객체는 마치 자신의 클래스를 바꾸는 것처럼 보인다.
+
+### Use When
+
+* Object의 행동이 상태에 영향을 받을 때
+* 상태에 따라 복잡한 조건이 걸려 있을 때
+* 상태에 따라 명확한 분리가 필요할 때
+
+![state_pattern](./img/state.jpeg)
+
+### 디자인 원칙 
+
+* OCP
+
+### 다른 패턴과의 유사성
+
+* 전략 패턴과 유사하지만, 의도의 차이가 있다.
+  * State패턴은 각각의 state행동을 encapsulate한다.
+  * 전략패턴은 알고리즘을 encapsulate한다.
+* 전략 패턴과 state패턴 모두 composition과 delegation을 활용한다.
