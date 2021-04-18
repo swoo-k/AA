@@ -106,3 +106,70 @@
   * State패턴은 각각의 state행동을 encapsulate한다.
   * 전략패턴은 알고리즘을 encapsulate한다.
 * 전략 패턴과 state패턴 모두 composition과 delegation을 활용한다.
+
+
+
+## Mediator Pattern
+
+> 한 집합에 속해있는 객체의 상호작용을 캡술화하는 객체를 정의합니다. 객체들이 직접 서로를 참조하지 않도록 하여 객체 사이의 소결합을 촉진시키며, 개발자가 객체의 상호작용을 독립적으로 다양화시킬 수 있게 만듭니다.
+>
+> like 관제실
+
+### Use When
+
+* Objects간의 메세지가 복잡할 때
+* 너무 많은 관계가 존재하고, 그들사이의 복잡한 커뮤니케이션이 필요할 때
+
+![mediator](./img/mediator.jpeg)
+
+### 특징
+
+* 각각의 object는 encapsulate하고, mediator를 통해서만 커뮤니케이션
+* 각각의 클래스들은 loose coupling
+
+장점
+
+* easy to understand
+
+단점
+
+* hardly ever reusable
+
+
+
+## 생성 패턴
+
+> new를 사용하지 안하고 objects를 만들도록 하는 것. client의 코드를 수정하지 않고도 object를 생성할 수 있음. 
+>
+> 대표적인 예로 factory method, abstract factroy, sington, builder 등이 있음
+
+### factory method
+
+* 상속을 통해 object를 instantiated
+
+### abstract factory
+
+* factory object에 object생성을 delegation한다.
+
+
+
+## Factory Method Pattern
+
+> 객체를 생성하기 위해 인터페이스를 정의하지만, 어떤 클래스의 인스턴스를 생성할지에 대한 결정은 서브클래스가 내리도록한다. 
+
+### Use When
+
+* 어떤 클래스가 생성될 지 모를때
+* Subclasses에서 어떤 object가 생성될지 특정될 때
+
+![factory_method_pizza](./img/factory_method_example.jpeg)
+
+
+
+![factory_method](./img/factory_method.jpeg)
+
+### 디자인 원칙
+
+* DIP 
+  * Depend upon abstraction. Do not depend upon concrete classes
+  * High-level components should not depend on low-level components
