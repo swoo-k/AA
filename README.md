@@ -256,7 +256,7 @@
 public class Singleton {
   private static Singleton uniqueInstance;
   
-  # private으로 선언해서, client가 new로 생성하지 못하게
+  // private으로 선언해서, client가 new로 생성하지 못하게
   private Singleton() {}
   
   public static Singleton getInstance() {
@@ -278,7 +278,7 @@ public class Singleton {
 public class Singleton {
   private static Singleton uniqueInstance;
   
-  # private으로 선언해서, client가 new로 생성하지 못하게
+  // private으로 선언해서, client가 new로 생성하지 못하게
   private Singleton() {}
   
   public static synchronized Singleton getInstance() {
@@ -423,7 +423,7 @@ public class Singleton {
 
 
 
-![decorator_example](/Users/swoo/Library/Mobile Documents/com~apple~CloudDocs/Downloads/img/deco_exam.jpeg)
+![decorator_example](./img/deco_exam.jpeg)
 
 
 
@@ -463,4 +463,51 @@ public class Singleton {
 
 
 ![composite](./img/composite.jpeg)
+
+# Bridge Pattern
+
+> 구현에서 추상을 분리하여, 이들이 독립적으로 다양성을 가질 수 있도록 한다
+
+
+
+### Use When
+
+* abstraction 과 implementation이 컴파일 타임에 묶이면 안될 때
+* abstraction 과 implementation이 독립적으로 확장 될 때
+* 추상의 구현 클래스 변경이 클라이언트에 영향을 주지 않아야할 때
+* 구현의 내용을 클라이언트에게 오픈하고 싶지 않을 때
+
+
+
+![bridge](./img/bridge.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 노트
+
+* 전략패턴, 상태패턴, 브릿지 패턴 유사
+
+
 
